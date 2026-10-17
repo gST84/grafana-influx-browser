@@ -46,3 +46,6 @@ ci/
 .idea
 
 .eslintcache
+
+# Packaged plugin zips
+release/
