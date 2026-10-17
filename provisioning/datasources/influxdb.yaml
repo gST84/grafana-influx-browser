@@ -1,0 +1,15 @@
+# Local development only: the throw-away InfluxDB test container (see README).
+apiVersion: 1
+
+datasources:
+  - name: InfluxDB (dev)
+    uid: influx-dev
+    type: influxdb
+    access: proxy
+    url: http://host.docker.internal:18086
+    jsonData:
+      version: Flux
+      organization: test
+      defaultBucket: homeassistant
+    secureJsonData:
+      token: devtoken123

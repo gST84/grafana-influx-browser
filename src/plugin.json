@@ -1,0 +1,39 @@
+{
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/main/docs/sources/developers/plugins/plugin.schema.json",
+  "type": "app",
+  "name": "Influx Browser",
+  "id": "gst84-influxbrowser-app",
+  "info": {
+    "keywords": [
+      "app",
+      "influxdb",
+      "flux",
+      "explore",
+      "home assistant"
+    ],
+    "description": "Browse InfluxDB 2 data: bucket, measurements, values and tags; chart, table, CSV export and one-click dashboards.",
+    "author": {
+      "name": "Gst84"
+    },
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "screenshots": [],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+  "includes": [
+    {
+      "type": "page",
+      "name": "Browser",
+      "path": "/a/%PLUGIN_ID%/browser",
+      "addToNav": true,
+      "defaultNav": true
+    }
+  ],
+  "dependencies": {
+    "grafanaDependency": ">=13.2.0",
+    "plugins": []
+  }
+}

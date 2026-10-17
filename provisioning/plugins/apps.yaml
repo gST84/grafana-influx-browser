@@ -1,0 +1,6 @@
+apiVersion: 1
+
+apps:
+  - type: 'gst84-influxbrowser-app'
+    org_id: 1
+    disabled: false
